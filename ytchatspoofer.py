@@ -61,7 +61,7 @@ if video_id:
     while not result:
         result = check_messages_for_term(chat_id, term_to_check)
         if not result:
-            print(f"Belirtilen terim bulunamadı. 5 saniye bekleniyor...")
+            print(f"Couldn't Find The Word. Suspended 5 Seconds...")
             time.sleep(5)
     
     print(f"Bildirim: {result}")
